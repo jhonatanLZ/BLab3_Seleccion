@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:orientation="vertical"
+    tools:context=".Radio">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/jhonatan_luis_zarzuri_chauca"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Tipo de Asistencia"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="RADIOBUTTON"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="35dp"/>
+    <RadioGroup
+        android:id="@+id/grupoRadio"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radiobuttonDistancia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Distancia"/>
+        <RadioButton
+            android:id="@+id/radiobuttonSemipresencial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semi Presencial"/>
+        <RadioButton
+            android:id="@+id/radiobuttonPresencial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precensial"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/txtRadioAsistencia"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Asistencia seleccionada"
+        android:textSize="25dp"/>
+    <TextView
+        android:id="@+id/txtRadioSeleccionado"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Registro Vacio !!"
+        android:textSize="25dp"/>
+
+</LinearLayout>
